@@ -16,22 +16,22 @@ class CONTENTEXAMPLESCPP_API ACEButtonLightBulbBasic : public AActor
     GENERATED_BODY()
 
     UPROPERTY()
-    USceneComponent* Base;
+    USceneComponent* Base = nullptr;
 
     UPROPERTY()
-    class UCapsuleComponent* TriggerCollision;
+    class UCapsuleComponent* TriggerCollision = nullptr;
 
     UPROPERTY()
-    UStaticMeshComponent* ButtonMesh;
+    UStaticMeshComponent* ButtonMesh = nullptr;
 
     UPROPERTY()
-    UMaterialInstanceDynamic* ButtonLightMaterial;
+    UMaterialInstanceDynamic* ButtonLightMaterial = nullptr;
 
     UPROPERTY()
     TMap<ECEButtonLightBulbBasicStaticMesh, UStaticMesh*> StaticMeshes;
 
     UPROPERTY(EditAnywhere)
-    class ACELightBulbBasic* TargetLight;
+    class ACELightBulbBasic* TargetLight = nullptr;
 
 private:
     void InitializeAssets();

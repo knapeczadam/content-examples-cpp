@@ -31,27 +31,27 @@ class CONTENTEXAMPLESCPP_API ACEMetalSphere : public AActor, public ICEElemental
 	GENERATED_BODY()
 
 	UPROPERTY()
-	USceneComponent* Base;
+	USceneComponent* Base = nullptr;
 
 	UPROPERTY()
-	UStaticMeshComponent* MetalSphere;
+	UStaticMeshComponent* MetalSphere = nullptr;
 
 	UPROPERTY()
-	UParticleSystemComponent* Smoke;
+	UParticleSystemComponent* Smoke = nullptr;
 
 	UPROPERTY()
-	UParticleSystemComponent* Drips;
+	UParticleSystemComponent* Drips = nullptr;
 
-	float Burntness;
+	float Burntness = 0.0f;
 
-	float Wetness;
+	float Wetness = 0.0f;
 
-	float Heat;
+	float Heat = 0.0f;
 
-	float DeltaSeconds;
+	float DeltaSeconds = 0.0f;
 
 	UPROPERTY()
-	UMaterialInstanceDynamic* MetalMaterial;
+	UMaterialInstanceDynamic* MetalMaterial = nullptr;
 
 	UPROPERTY()
 	TMap<ECEMetalSphereMaterial, UMaterialInterface*> Materials;

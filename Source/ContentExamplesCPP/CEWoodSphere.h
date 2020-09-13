@@ -32,28 +32,28 @@ class CONTENTEXAMPLESCPP_API ACEWoodSphere : public AActor, public ICEElementalP
 	GENERATED_BODY()
 
 	UPROPERTY()
-	USceneComponent* Base;
+	USceneComponent* Base = nullptr;
 
 	UPROPERTY()
-	UStaticMeshComponent* WoodSphere;
+	UStaticMeshComponent* WoodSphere = nullptr;
 
 	UPROPERTY()
-	UParticleSystemComponent* Fire;
+	UParticleSystemComponent* Fire = nullptr;
 
 	UPROPERTY()
-	UParticleSystemComponent* Smoke;
+	UParticleSystemComponent* Smoke = nullptr;
 
 	UPROPERTY()
-	UParticleSystemComponent* Drips;
+	UParticleSystemComponent* Drips = nullptr;
 
 	UPROPERTY()
-	UMaterialInstanceDynamic* WoodMaterial;
+	UMaterialInstanceDynamic* WoodMaterial = nullptr;
 
-	float Burntness;
+	float Burntness = 0.0f;
 
-	float Wetness;
+	float Wetness = 0.0f;
 
-	float Heat;
+	float Heat = 0.0f;
 
 	UPROPERTY()
 	TMap<ECEWoodSphereMaterial, UMaterialInterface*> Materials;

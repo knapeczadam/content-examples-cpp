@@ -18,8 +18,6 @@ ACESpinningLogo::ACESpinningLogo()
 	Logo->SetupAttachment(RootComponent);
 
     RotationTimeline = CreateDefaultSubobject<UTimelineComponent>(TEXT("Rotation"));
-
-	bIsA = true;
 }
 
 // Called when the game starts or when spawned

@@ -23,8 +23,6 @@ ACELightBulbPulse::ACELightBulbPulse()
 	Light->SetupAttachment(RootComponent);
 
     LightPulseTimeline = CreateDefaultSubobject<UTimelineComponent>(TEXT("Light pulse"));
-
-	LightColor = FLinearColor(1.0f, 0.7f, 0.25f, 0.0f);
 }
 
 // Called when the game starts or when spawned

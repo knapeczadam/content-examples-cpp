@@ -31,19 +31,19 @@ class CONTENTEXAMPLESCPP_API ACEBomb : public AActor
     GENERATED_BODY()
 
     UPROPERTY()
-    UStaticMeshComponent* Bomb;
+    UStaticMeshComponent* Bomb = nullptr;
 
     UPROPERTY(EditAnywhere)
-    UParticleSystemComponent* FuseEffect;
+    UParticleSystemComponent* FuseEffect = nullptr;
 
     UPROPERTY()
-    class UTimelineComponent* FuseTimeline;
+    class UTimelineComponent* FuseTimeline = nullptr;
 
     UPROPERTY()
-    UMaterialInstanceDynamic* FuseMaterial;
+    UMaterialInstanceDynamic* FuseMaterial = nullptr;
 
     UPROPERTY(EditAnywhere)
-    UCurveFloat* FuseCurve;
+    UCurveFloat* FuseCurve = nullptr;
 
     UPROPERTY()
     TMap<ECEBombCurve, UCurveFloat*> Curves;

@@ -31,19 +31,19 @@ class CONTENTEXAMPLESCPP_API ACESpinningLogoDispatch : public AActor
     GENERATED_BODY()
     
     UPROPERTY()
-    USceneComponent* Base;
+    USceneComponent* Base = nullptr;
 
     UPROPERTY()
-    UStaticMeshComponent* Logo;
+    UStaticMeshComponent* Logo = nullptr;
 
     UPROPERTY()
-    class UTimelineComponent* RotationTimeline;
+    class UTimelineComponent* RotationTimeline = nullptr;
     
     UPROPERTY(EditAnywhere)
-    class ACEButtonDispatch* TargetButton;
+    class ACEButtonDispatch* TargetButton = nullptr;
 
     UPROPERTY()
-    UCurveFloat* YawCurve;
+    UCurveFloat* YawCurve = nullptr;
 
     UPROPERTY()
     TMap<ECESpinningLogoDispatchCurve, UCurveFloat*> Curves;

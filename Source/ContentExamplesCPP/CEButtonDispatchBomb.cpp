@@ -21,9 +21,6 @@ ACEButtonDispatchBomb::ACEButtonDispatchBomb()
 	ButtonMesh->SetStaticMesh(StaticMeshes[ECEButtonDispatchBombStaticMesh::Button]);
 	ButtonMesh->GetBodyInstance()->bAutoWeld = false;
 	ButtonMesh->SetupAttachment(RootComponent);
-
-	SpawnPoint = FVector(0.0f, -300.0f, 150.0f);
-	bIsButtonEnabled = true;
 }
 
 // Called when the game starts or when spawned

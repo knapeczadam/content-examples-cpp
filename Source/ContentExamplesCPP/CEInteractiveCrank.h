@@ -29,28 +29,28 @@ class CONTENTEXAMPLESCPP_API ACEInteractiveCrank : public AActor, public ICEPlay
 	GENERATED_BODY()
 
 	UPROPERTY()
-	UStaticMeshComponent* WheelBase;
+	UStaticMeshComponent* WheelBase = nullptr;
 
 	UPROPERTY()
-	UStaticMeshComponent* Wheel;
+	UStaticMeshComponent* Wheel = nullptr;
 
 	UPROPERTY()
-	UStaticMeshComponent* WheelHighlighted;
+	UStaticMeshComponent* WheelHighlighted = nullptr;
 
 	UPROPERTY()
-	class UBoxComponent* InteractTrigger;
+	class UBoxComponent* InteractTrigger = nullptr;
 
 	UPROPERTY()
-	class UTextRenderComponent* TextRender1;
+	class UTextRenderComponent* TextRender1 = nullptr;
 
-	float Rotation;
+	float Rotation = 0.0f;
 
 	FVector PlayerDragInteraction;
 
 	UPROPERTY(EditAnywhere)
-	class ACELEDBasic* TargetLED;
+	class ACELEDBasic* TargetLED = nullptr;
 
-	float TotalRotation;
+	float TotalRotation = 0.0f;
 
 	UPROPERTY()
 	TMap<ECEInteractiveCrankMaterial, UMaterialInterface*> Materials;

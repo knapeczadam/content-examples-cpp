@@ -6,7 +6,6 @@ ACEHUDComms::ACEHUDComms()
     InitializeAssets();
 
     TextPopTimeline = CreateDefaultSubobject<UTimelineComponent>(FName(TEXT("Text pop")));
-    VerticalOffset = 0.0f;
     HUDFont = Fonts[ECEHUDCommsFont::RobotoDistanceField];
     ResourceMaterial = Materials[ECEHUDCommsMaterial::CrossHair];
     VerticalOffsetCurve = Curves[ECEHUDCommsCurve::VerticalOffset];

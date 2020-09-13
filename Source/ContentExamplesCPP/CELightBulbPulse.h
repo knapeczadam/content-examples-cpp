@@ -22,24 +22,24 @@ class CONTENTEXAMPLESCPP_API ACELightBulbPulse : public AActor
     GENERATED_BODY()
     
     UPROPERTY()
-    UStaticMeshComponent* LightBulb;
+    UStaticMeshComponent* LightBulb = nullptr;
 
     UPROPERTY()
-    class UPointLightComponent* Light;
+    class UPointLightComponent* Light = nullptr;
 
     UPROPERTY()
-    class UTimelineComponent* LightPulseTimeline;
+    class UTimelineComponent* LightPulseTimeline = nullptr;
 
     UPROPERTY()
-    UCurveFloat* FlashCurve;
+    UCurveFloat* FlashCurve = nullptr;
 
     UPROPERTY()
-    UMaterialInstanceDynamic* LightBulbMaterial1;
+    UMaterialInstanceDynamic* LightBulbMaterial1 = nullptr;
 
     UPROPERTY()
-    UMaterialInstanceDynamic* LightBulbMaterial2;
+    UMaterialInstanceDynamic* LightBulbMaterial2 = nullptr;
 
-    FLinearColor LightColor;
+    FLinearColor LightColor = FLinearColor(1.0f, 0.7f, 0.25f, 0.0f);
 
     UPROPERTY()
     TMap<ECELightBulbPulseStaticMesh, UStaticMesh*> StaticMeshes;

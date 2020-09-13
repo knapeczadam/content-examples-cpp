@@ -33,9 +33,6 @@ ACELightBulbBatteryPowered::ACELightBulbBatteryPowered()
 	ConnectorTrigger->SetupAttachment(RootComponent);
 
 	LightFlashTimeline = CreateDefaultSubobject<UTimelineComponent>(TEXT("Light flash"));
-
-	ElectricitySupplied = 0.0f;
-	LightColor = FLinearColor(1,0.7f,0.3f,10);
 }
 
 // Called when the game starts or when spawned

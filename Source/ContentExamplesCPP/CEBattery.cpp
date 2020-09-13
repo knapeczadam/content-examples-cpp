@@ -26,8 +26,6 @@ ACEBattery::ACEBattery()
     ConnectorTrigger->SetupAttachment(Battery);
 
     MovementTimeline = CreateDefaultSubobject<UTimelineComponent>(TEXT("Movement"));
-
-    Electricity = 10.0f;
 }
 
 // Called when the game starts or when spawned

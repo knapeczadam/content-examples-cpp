@@ -23,24 +23,24 @@ class CONTENTEXAMPLESCPP_API ACELEDInterface : public AActor, public ICEPlayerIn
     GENERATED_BODY()
 
     UPROPERTY()
-    UStaticMeshComponent* LED;
+    UStaticMeshComponent* LED = nullptr;
 
     UPROPERTY()
-    class UPointLightComponent* Light;
+    class UPointLightComponent* Light = nullptr;
 
     UPROPERTY()
-    class UTimelineComponent* LightFlashTimeline;
+    class UTimelineComponent* LightFlashTimeline = nullptr;
 
     UPROPERTY()
-    UMaterialInstanceDynamic* LightBulbMaterial1;
+    UMaterialInstanceDynamic* LightBulbMaterial1 = nullptr;
 
     UPROPERTY()
-    UMaterialInstanceDynamic* LightBulbMaterial2;
+    UMaterialInstanceDynamic* LightBulbMaterial2 = nullptr;
 
     UPROPERTY()
-    UCurveFloat* FlashCurve;
+    UCurveFloat* FlashCurve = nullptr;
 
-    bool bIsA;
+    bool bIsA = true;
 
     UPROPERTY()
     TMap<ECELEDInterfaceCurve, UCurveFloat*> Curves;

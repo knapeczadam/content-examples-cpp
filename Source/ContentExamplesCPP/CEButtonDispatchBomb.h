@@ -16,23 +16,23 @@ class CONTENTEXAMPLESCPP_API ACEButtonDispatchBomb : public AActor
     GENERATED_BODY()
 
     UPROPERTY()
-    USceneComponent* Base;
+    USceneComponent* Base = nullptr;
 
     UPROPERTY()
-    class UCapsuleComponent* TriggerCollision;
+    class UCapsuleComponent* TriggerCollision = nullptr;
 
     UPROPERTY()
-    UStaticMeshComponent* ButtonMesh;
+    UStaticMeshComponent* ButtonMesh = nullptr;
 
     UPROPERTY()
-    UMaterialInstanceDynamic* ButtonLightMaterial;
+    UMaterialInstanceDynamic* ButtonLightMaterial = nullptr;
 
-    bool bIsButtonEnabled;
+    bool bIsButtonEnabled = true;
 
     UPROPERTY(EditAnywhere, meta=(MakeEditWidget))
-    FVector SpawnPoint;
+    FVector SpawnPoint = FVector(0.0f, -300.0f, 150.0f);
 
-    bool bIsOverlappingButton;
+    bool bIsOverlappingButton = false;
 
     FTimerHandle BombExplodedHandler;
 

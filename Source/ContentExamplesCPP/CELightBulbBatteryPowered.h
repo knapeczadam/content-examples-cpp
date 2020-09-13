@@ -22,29 +22,29 @@ class CONTENTEXAMPLESCPP_API ACELightBulbBatteryPowered : public AActor
 	GENERATED_BODY()
 	
 	UPROPERTY()
-	UStaticMeshComponent* LightBulb;
+	UStaticMeshComponent* LightBulb = nullptr;
 
 	UPROPERTY()
-	class UPointLightComponent* Light;
+	class UPointLightComponent* Light = nullptr;
 
 	UPROPERTY()
-	class UBoxComponent* ConnectorTrigger;
+	class UBoxComponent* ConnectorTrigger = nullptr;
 
 	UPROPERTY()
-	class UTimelineComponent* LightFlashTimeline;
+	class UTimelineComponent* LightFlashTimeline = nullptr;
 
 	UPROPERTY()
-	UMaterialInstanceDynamic* LightBulbMaterial1;
+	UMaterialInstanceDynamic* LightBulbMaterial1 = nullptr;
 
 	UPROPERTY()
-	UMaterialInstanceDynamic* LightBulbMaterial2;
+	UMaterialInstanceDynamic* LightBulbMaterial2 = nullptr;
 
 	UPROPERTY()
-	UCurveFloat* FlashCurve;
+	UCurveFloat* FlashCurve = nullptr;
 
-	FLinearColor LightColor;
+	FLinearColor LightColor = FLinearColor(1,0.7f,0.3f,10);
 
-	float ElectricitySupplied;
+	float ElectricitySupplied = 0.0f;
 
 	UPROPERTY()
 	TMap<ECELightBulbBatteryPoweredStaticMesh, UStaticMesh*> StaticMeshes;

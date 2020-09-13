@@ -31,8 +31,6 @@ ACEProjectileFireball::ACEProjectileFireball()
     ProjectileMovement1 = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("ProjectileMovement1"));
 	ProjectileMovement1->InitialSpeed = 500.0f;
 	ProjectileMovement1->bRotationFollowsVelocity = true;
-
-	Velocity = FVector(1500.0f, 0.0f, 150.0f);
 }
 
 // Called when the game starts or when spawned

@@ -24,22 +24,22 @@ class CONTENTEXAMPLESCPP_API ACEBattery : public AActor
     GENERATED_BODY()
     
     UPROPERTY()
-    USceneComponent* Base;
+    USceneComponent* Base = nullptr;
 
     UPROPERTY()
-    UStaticMeshComponent* Battery;
+    UStaticMeshComponent* Battery = nullptr;
 
     UPROPERTY()
-    class UBoxComponent* ConnectorTrigger;
+    class UBoxComponent* ConnectorTrigger = nullptr;
 
     UPROPERTY()
-    class UTimelineComponent* MovementTimeline;
+    class UTimelineComponent* MovementTimeline = nullptr;
 
     UPROPERTY()
-    UCurveFloat* MovementCurve;
+    UCurveFloat* MovementCurve = nullptr;
 
     UPROPERTY(EditAnywhere)
-    float Electricity;
+    float Electricity = 10.0f;
 
     UPROPERTY()
     TMap<ECEBatteryStaticMesh, UStaticMesh*> StaticMeshes;
@@ -48,7 +48,7 @@ class CONTENTEXAMPLESCPP_API ACEBattery : public AActor
     TMap<ECEBatteryCurve, UCurveFloat*> Curves;
 
     UPROPERTY(EditAnywhere)
-    UStaticMesh* BatteryMesh;
+    UStaticMesh* BatteryMesh = nullptr;
     
 private:
     void InitializeAssets();

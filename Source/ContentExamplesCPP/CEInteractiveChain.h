@@ -39,42 +39,42 @@ class CONTENTEXAMPLESCPP_API ACEInteractiveChain : public AActor, public ICEPlay
 	GENERATED_BODY()
 
 	UPROPERTY()
-	UStaticMeshComponent* ChainBase;
+	UStaticMeshComponent* ChainBase = nullptr;
 
 	UPROPERTY()
-	USkeletalMeshComponent* Chain;
+	USkeletalMeshComponent* Chain = nullptr;
 
 	UPROPERTY()
-	UStaticMeshComponent* Handle;
+	UStaticMeshComponent* Handle = nullptr;
 
 	UPROPERTY()
-	UStaticMeshComponent* HandleHighlighted;
+	UStaticMeshComponent* HandleHighlighted = nullptr;
 
 	UPROPERTY()
-	class UCapsuleComponent* InteractTrigger;
+	class UCapsuleComponent* InteractTrigger = nullptr;
 
 	UPROPERTY()
-	class UTextRenderComponent* TextRender1;
+	class UTextRenderComponent* TextRender1 = nullptr;
 
 	UPROPERTY()
-	class UTimelineComponent* ChainPullTimeline;
+	class UTimelineComponent* ChainPullTimeline = nullptr;
 
 	UPROPERTY()
-	class UPhysicsHandleComponent* PhysicsHandle;
+	class UPhysicsHandleComponent* PhysicsHandle = nullptr;
 
 	UPROPERTY(EditAnywhere)
-	class ACELEDBasic* TargetLED;
+	class ACELEDBasic* TargetLED = nullptr;
 
-	bool bIsGrabbed;
+	bool bIsGrabbed = false;
 
 	FVector HandleTarget;
 
-	float DeltaSeconds;
+	float DeltaSeconds = 0.0f;
 
 	FVector RestingChainOffset;
 
 	UPROPERTY()
-	UCurveFloat* ChainHeightCurve;
+	UCurveFloat* ChainHeightCurve = nullptr;
 
 	ETimelineDirection::Type Direction;
 
@@ -90,11 +90,11 @@ class CONTENTEXAMPLESCPP_API ACEInteractiveChain : public AActor, public ICEPlay
 	UPROPERTY()
 	TMap<ECEInteractiveChainCurve, UCurveFloat*> Curves;
 
-	bool bA;
+	bool bA = true;
 
-	bool bB;
+	bool bB = true;
 
-	bool bIsOn;
+	bool bIsOn = true;
 
 private:
 	void InitializeAssets();

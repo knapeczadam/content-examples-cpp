@@ -22,22 +22,22 @@ class CONTENTEXAMPLESCPP_API ACELEDBasic : public AActor
 	GENERATED_BODY()
 
 	UPROPERTY(EditAnywhere)
-	UStaticMeshComponent* LED;
+	UStaticMeshComponent* LED = nullptr;
 
 	UPROPERTY()
-	class UPointLightComponent* Light;
+	class UPointLightComponent* Light = nullptr;
 
 	UPROPERTY()
-	class UTimelineComponent* LightFlashTimeline;
+	class UTimelineComponent* LightFlashTimeline = nullptr;
 
 	UPROPERTY()
-	UCurveFloat* FlashCurve;
+	UCurveFloat* FlashCurve = nullptr;
 
 	UPROPERTY()
-	UMaterialInstanceDynamic* LightBulbMaterial1;
+	UMaterialInstanceDynamic* LightBulbMaterial1 = nullptr;
 
 	UPROPERTY()
-	UMaterialInstanceDynamic* LightBulbMaterial2;
+	UMaterialInstanceDynamic* LightBulbMaterial2 = nullptr;
 
 	UPROPERTY()
 	TMap<ECELEDBasicCurve, UCurveFloat*> Curves;

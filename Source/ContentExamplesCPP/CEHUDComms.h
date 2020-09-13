@@ -32,23 +32,26 @@ class CONTENTEXAMPLESCPP_API ACEHUDComms : public AHUD
     GENERATED_BODY()
 
     UPROPERTY()
-    UTimelineComponent* TextPopTimeline;
+    UTimelineComponent* TextPopTimeline = nullptr;
 
     UPROPERTY()
-    UCurveFloat* VerticalOffsetCurve;
+    UCurveFloat* VerticalOffsetCurve = nullptr;
 
     UPROPERTY()
-    UMaterialInterface* ResourceMaterial;
+    UMaterialInterface* ResourceMaterial = nullptr;
 
-    float VerticalOffset;
+    float VerticalOffset = 0.0f;
 
-    bool bCanInteract;
+    bool bCanInteract = false;
 
-    float SizeX, SizeY;
+    float SizeX = 0.0f;
+
+    float SizeY = 0.0f;
     
-    bool bDoOnceFired;
+    bool bDoOnceFired = false;
 
-    UFont* HUDFont;
+    UPROPERTY()
+    UFont* HUDFont = nullptr;
 
     UPROPERTY()
     TMap<ECEHUDCommsFont, UFont*> Fonts;

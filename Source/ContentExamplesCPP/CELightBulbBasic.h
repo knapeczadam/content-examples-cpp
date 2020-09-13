@@ -22,22 +22,22 @@ class CONTENTEXAMPLESCPP_API ACELightBulbBasic : public AActor
     GENERATED_BODY()
 
     UPROPERTY(EditAnywhere, Category="Light Bulb")
-    UStaticMeshComponent* LightBulb;
+    UStaticMeshComponent* LightBulb = nullptr;
 
     UPROPERTY(EditAnywhere, Category="Light Bulb")
-    class UPointLightComponent* Light;
+    class UPointLightComponent* Light = nullptr;
 
     UPROPERTY()
-    class UTimelineComponent* LightFlashTimeline;
+    class UTimelineComponent* LightFlashTimeline = nullptr;
 
     UPROPERTY()
-    UMaterialInstanceDynamic* LightBulbMaterial1;
+    UMaterialInstanceDynamic* LightBulbMaterial1 = nullptr;
 
     UPROPERTY()
-    UMaterialInstanceDynamic* LightBulbMaterial2;
+    UMaterialInstanceDynamic* LightBulbMaterial2 = nullptr;
 
     UPROPERTY()
-    UCurveFloat* FlashCurve;
+    UCurveFloat* FlashCurve = nullptr;
 
     UPROPERTY()
     TMap<ECELightBulbBasicStaticMesh, UStaticMesh*> StaticMeshes;

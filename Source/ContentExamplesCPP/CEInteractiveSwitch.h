@@ -33,32 +33,32 @@ class CONTENTEXAMPLESCPP_API ACEInteractiveSwitch : public AActor, public ICEPla
 	GENERATED_BODY()
 
 	UPROPERTY()
-	UStaticMeshComponent* SwitchBase;
+	UStaticMeshComponent* SwitchBase = nullptr;
 
 	UPROPERTY()
-	UStaticMeshComponent* SwitchHandle;
+	UStaticMeshComponent* SwitchHandle = nullptr;
 
 	UPROPERTY()
-	UStaticMeshComponent* SwitchHandleHighlighted;
+	UStaticMeshComponent* SwitchHandleHighlighted = nullptr;
 
 	UPROPERTY()
-	class UBoxComponent* InteractTrigger;
+	class UBoxComponent* InteractTrigger = nullptr;
 
 	UPROPERTY()
-	class UTextRenderComponent* TextRender1;
+	class UTextRenderComponent* TextRender1 = nullptr;
 
 	UPROPERTY()
-	class UTimelineComponent* RotateSwitchTimeline;
+	class UTimelineComponent* RotateSwitchTimeline = nullptr;
 
 	UPROPERTY()
-	UCurveFloat* PitchCurve;
+	UCurveFloat* PitchCurve = nullptr;
 
 	ETimelineDirection::Type TimelineDirection;
 
-	bool bSwitchPosition;
+	bool bSwitchPosition = false;
 
 	UPROPERTY(EditAnywhere)
-	class ACELEDBasic* TargetLED;
+	class ACELEDBasic* TargetLED = nullptr;
 
 	UPROPERTY()
 	TMap<ECEInteractiveSwitchCurve, UCurveFloat*> Curves;

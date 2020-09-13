@@ -18,16 +18,16 @@ class CONTENTEXAMPLESCPP_API ACEButtonDispatch : public AActor
     GENERATED_BODY()
     
     UPROPERTY()
-    USceneComponent* Base;
+    USceneComponent* Base = nullptr;
 
     UPROPERTY()
-    class UCapsuleComponent* TriggerCollision;
+    class UCapsuleComponent* TriggerCollision = nullptr;
 
     UPROPERTY()
-    UStaticMeshComponent* ButtonMesh;
+    UStaticMeshComponent* ButtonMesh = nullptr;
 
     UPROPERTY()
-    UMaterialInstanceDynamic* ButtonLightMaterial;
+    UMaterialInstanceDynamic* ButtonLightMaterial = nullptr;
 
     FButtonToggledEvent ButtonToggledEvent;
 

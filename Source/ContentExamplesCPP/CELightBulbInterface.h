@@ -23,24 +23,24 @@ class CONTENTEXAMPLESCPP_API ACELightBulbInterface : public AActor, public ICEPl
     GENERATED_BODY()
 
     UPROPERTY()
-    UStaticMeshComponent* LightBulb;
+    UStaticMeshComponent* LightBulb = nullptr;
 
     UPROPERTY()
-    class UPointLightComponent* Light;
+    class UPointLightComponent* Light = nullptr;
 
     UPROPERTY()
-    class UTimelineComponent* LightFlashTimeline;
+    class UTimelineComponent* LightFlashTimeline = nullptr;
 
     UPROPERTY()
-    UCurveFloat* FlashCurve;
+    UCurveFloat* FlashCurve = nullptr;
 
     UPROPERTY()
-    UMaterialInstanceDynamic* LightBulbMaterial1;
+    UMaterialInstanceDynamic* LightBulbMaterial1 = nullptr;
 
     UPROPERTY()
-    UMaterialInstanceDynamic* LightBulbMaterial2;
+    UMaterialInstanceDynamic* LightBulbMaterial2 = nullptr;
 
-    bool bIsA;
+    bool bIsA = true;
 
     UPROPERTY()
     TMap<ECELightBulbInterfaceCurve, UCurveFloat*> Curves;

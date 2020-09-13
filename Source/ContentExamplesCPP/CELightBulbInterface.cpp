@@ -27,8 +27,6 @@ ACELightBulbInterface::ACELightBulbInterface()
     Light->SetupAttachment(RootComponent);
 
     LightFlashTimeline = CreateDefaultSubobject<UTimelineComponent>(TEXT("Light flash"));
-
-    bIsA = true;
 }
 
 // Called when the game starts or when spawned

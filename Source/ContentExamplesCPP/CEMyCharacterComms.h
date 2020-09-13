@@ -10,29 +10,29 @@ class CONTENTEXAMPLESCPP_API ACEMyCharacterComms : public ACharacter
     GENERATED_BODY()
 public:
     UPROPERTY()
-    class UCameraComponent* FirstPersonCamera;
+    class UCameraComponent* FirstPersonCamera = nullptr;
 
     UPROPERTY()
-    USceneComponent* RightHand;
+    USceneComponent* RightHand = nullptr;
 
     UPROPERTY()
-    USceneComponent* LeftHand;
+    USceneComponent* LeftHand = nullptr;
     
-    bool bPowersEnabled;
+    bool bPowersEnabled = false;
     
-    bool bInteracting;
+    bool bInteracting = false;
 
     UPROPERTY()
-    AActor* ActorToInteractWith;
+    AActor* ActorToInteractWith = nullptr;
 
-    float ClosestDistance;
+    float ClosestDistance = 0.0f;
 
-    float DeltaSeconds;
+    float DeltaSeconds = 0.0f;
 
     FTimerHandle ShootFireTimer;
     FTimerHandle ShootWaterTimer;
 
-    bool bDoOnceFired;
+    bool bDoOnceFired = true;
     
 private:
     bool GetClosestInteractiveActor(const TArray<AActor*> OtherActors);

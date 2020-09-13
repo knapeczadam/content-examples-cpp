@@ -32,8 +32,6 @@ ACEMyCharacterComms::ACEMyCharacterComms()
     LeftHand = CreateDefaultSubobject<USceneComponent>(TEXT("Left hand"));
     LeftHand->SetRelativeLocation(FVector(0.0f, -90.0f, -50.0f));
     LeftHand->SetupAttachment(FirstPersonCamera);
-
-    bDoOnceFired = true;
 }
 
 // Called every frame

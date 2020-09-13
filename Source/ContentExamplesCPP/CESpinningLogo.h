@@ -31,18 +31,18 @@ class CONTENTEXAMPLESCPP_API ACESpinningLogo : public AActor, public ICEPlayerIn
     GENERATED_BODY()
 
     UPROPERTY()
-    USceneComponent* Base;
+    USceneComponent* Base = nullptr;
 
     UPROPERTY()
-    UStaticMeshComponent* Logo;
+    UStaticMeshComponent* Logo = nullptr;
 
     UPROPERTY()
-    class UTimelineComponent* RotationTimeline;
+    class UTimelineComponent* RotationTimeline = nullptr;
 
     UPROPERTY()
-    UCurveFloat* YawCurve;
+    UCurveFloat* YawCurve = nullptr;
 
-    bool bIsA;
+    bool bIsA = true;
 
     UPROPERTY()
     TMap<ECESpinningLogoCurve, UCurveFloat*> Curves;

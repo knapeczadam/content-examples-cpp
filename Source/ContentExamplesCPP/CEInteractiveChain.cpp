@@ -71,13 +71,6 @@ ACEInteractiveChain::ACEInteractiveChain()
 	TextRender1->SetupAttachment(Chain);
 	
 	ChainPullTimeline = CreateDefaultSubobject<UTimelineComponent>(TEXT("Chain pull"));
-
-	// PhysicsHandle = CreateDefaultSubobject<UPhysicsHandleComponent>(TEXT("Physics handle"));
-	// PhysicsHandle->CurrentTransform = Handle->GetRelativeTransform();
-
-	bIsOn = true;
-	bA = true;
-	bB = true;
 }
 
 // Called when the game starts or when spawned

@@ -31,27 +31,27 @@ class CONTENTEXAMPLESCPP_API ACEIceSphere : public AActor, public ICEElementalPr
 	GENERATED_BODY()
 
 	UPROPERTY()
-	USceneComponent* Base;
+	USceneComponent* Base = nullptr;
 
 	UPROPERTY()
-	UStaticMeshComponent* IceSphere;
+	UStaticMeshComponent* IceSphere = nullptr;
 
 	UPROPERTY()
-	UParticleSystemComponent* Drips;
+	UParticleSystemComponent* Drips = nullptr;
 
 	UPROPERTY()
-	UParticleSystemComponent* Steam;
+	UParticleSystemComponent* Steam = nullptr;
 
 	UPROPERTY()
-	UMaterialInstanceDynamic* IceMaterial;
+	UMaterialInstanceDynamic* IceMaterial = nullptr;
 
-	float Melted;
+	float Melted = 0.0f;
 
-	float Wetness;
+	float Wetness = 0.0f;
 
-	float Icicles;
+	float Icicles = 0.0f;
 
-	float Heat;
+	float Heat = 0.0f;
 	
 	UPROPERTY()
 	TMap<ECEIceSphereMaterial, UMaterialInterface*> Materials;

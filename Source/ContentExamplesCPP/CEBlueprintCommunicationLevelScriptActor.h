@@ -13,13 +13,13 @@ class CONTENTEXAMPLESCPP_API ACEBlueprintCommunicationLevelScriptActor : public 
     GENERATED_BODY()
     
     UPROPERTY(EditAnywhere)
-    class ACELightBulbBasic* TargetActor;
+    class ACELightBulbBasic* TargetActor = nullptr;
 
     UPROPERTY(EditAnywhere)
-    class ACEButtonDispatch* ButtonDispatcher;
+    class ACEButtonDispatch* ButtonDispatcher = nullptr;
 
     UPROPERTY(EditAnywhere)
-    class ATriggerBox* TriggerBox;
+    class ATriggerBox* TriggerBox = nullptr;
     
 private:
     UFUNCTION()

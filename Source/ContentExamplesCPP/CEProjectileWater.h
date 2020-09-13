@@ -23,21 +23,21 @@ class CONTENTEXAMPLESCPP_API ACEProjectileWater : public AActor
 	GENERATED_BODY()
 
 	UPROPERTY()
-	class USphereComponent* Collision;
+	class USphereComponent* Collision = nullptr;
 
 	UPROPERTY()
-	UParticleSystemComponent* Effect;
+	UParticleSystemComponent* Effect = nullptr;
 
 	UPROPERTY()
-	class UTimelineComponent* LifeSpanTimeline;
+	class UTimelineComponent* LifeSpanTimeline = nullptr;
 
 	UPROPERTY()
-	UCurveFloat* ScaleCurve;
+	UCurveFloat* ScaleCurve = nullptr;
 
 	UPROPERTY()
-	class UProjectileMovementComponent* ProjectileMovement1;
+	class UProjectileMovementComponent* ProjectileMovement1 = nullptr;
 
-	FVector Velocity;
+	FVector Velocity = FVector(1500.0f, 0.0f, 150.0f);
 
 	FTimerHandle FinishedHandler;
 
