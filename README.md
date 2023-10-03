@@ -1,6 +1,6 @@
 # ContentExamplesCPP
 
-<a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Blueprints/index.html#blueprint_communicationmap" target="_blank"><img src="[https://docs.unrealengine.com/Images/Resources/ContentExamples/Blueprints/BlueprintCommunication_Header.webp](https://docs.unrealengine.com/5.3/Images/samples-and-tutorials/content-examples/content-examples-hero-image.png)" alt="Unreal Engine - Content Examples" width="1126" height="1920" border="548"/></a>
+<a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Blueprints/index.html#blueprint_communicationmap" target="_blank"><img src="https://docs.unrealengine.com/5.3/Images/samples-and-tutorials/content-examples/content-examples-hero-image.png" alt="Unreal Engine - Content Examples" width="1920" height="548" border="10"/></a>
 
 ## About
 Same content, same logic in C++. 
